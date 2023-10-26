@@ -1,0 +1,12 @@
+input {
+    border: 1px red solid;
+}
+
+div {
+    border: 1px red solid;
+}
+
+button {
+    border-radius: 10px;
+    background-color: rgb(89, 126, 163);
+}
