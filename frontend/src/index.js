@@ -36,5 +36,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Root />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('custom-react-root')
 );
+
+// const root = ReactDOM.createRoot(document.getElementById('custom-react-root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );

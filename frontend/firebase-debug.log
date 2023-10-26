@@ -1,0 +1,48 @@
+[debug] [2023-10-26T18:04:05.739Z] ----------------------------------------------------------------------
+[debug] [2023-10-26T18:04:05.741Z] Command:       /usr/local/bin/firebase /Users/Home/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start
+[debug] [2023-10-26T18:04:05.741Z] CLI Version:   12.7.0
+[debug] [2023-10-26T18:04:05.742Z] Platform:      darwin
+[debug] [2023-10-26T18:04:05.742Z] Node Version:  v16.16.0
+[debug] [2023-10-26T18:04:05.746Z] Time:          Thu Oct 26 2023 14:04:05 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-10-26T18:04:05.746Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-26T18:04:05.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-26T18:04:05.875Z] > authorizing via signed-in user (eebrowning828@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-10-26T18:04:06.418Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-26T18:04:06.418Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-26T18:04:06.419Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-10-26T18:04:06.431Z] [hub] writing locator at /var/folders/jt/t6zwgsm50xg4ql0xsbj5t9vh0000gn/T/hub-forumfront-640ac.json
+[debug] [2023-10-26T18:04:06.451Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/forumfront-640ac/sites 
+[debug] [2023-10-26T18:04:08.603Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/forumfront-640ac/sites 200
+[debug] [2023-10-26T18:04:08.603Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/forumfront-640ac/sites {"sites":[{"name":"projects/forumfront-640ac/sites/forumfront-640ac","defaultUrl":"https://forumfront-640ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-26T18:04:08.604Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac/webApps/-/config [none]
+[debug] [2023-10-26T18:04:09.239Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac/webApps/-/config 200
+[debug] [2023-10-26T18:04:09.239Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac/webApps/-/config {"projectId":"forumfront-640ac","storageBucket":"forumfront-640ac.appspot.com","apiKey":"AIzaSyB6NumSO5R_UPVzD5xkQ-UnJrJzykW31JA","authDomain":"forumfront-640ac.firebaseapp.com","messagingSenderId":"697560155162"}
+[debug] [2023-10-26T18:04:09.261Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac [none]
+[debug] [2023-10-26T18:04:09.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac 200
+[debug] [2023-10-26T18:04:09.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/forumfront-640ac {"projectId":"forumfront-640ac","projectNumber":"697560155162","displayName":"ForumFront","name":"projects/forumfront-640ac","resources":{"hostingSite":"forumfront-640ac"},"state":"ACTIVE","etag":"1_9c3c2955-8c43-49bc-a011-a4d97b7c1165"}
+[info] i  hosting[forumfront-640ac]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[forumfront-640ac]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:04:22 +0000] "GET / HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:04:22 +0000] \"GET / HTTP/1.1\" 200 282 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:04:23 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:04:23 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:05:09 +0000] "GET /login HTTP/1.1" 404 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:05:09 +0000] \"GET /login HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:06:40 +0000] "GET / HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:06:40 +0000] \"GET / HTTP/1.1\" 200 282 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:06:43 +0000] "GET / HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:06:43 +0000] \"GET / HTTP/1.1\" 200 282 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Oct/2023:18:08:18 +0000] "GET / HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Oct/2023:18:08:18 +0000] \"GET / HTTP/1.1\" 200 282 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\""}}
